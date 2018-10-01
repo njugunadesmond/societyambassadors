@@ -30,7 +30,8 @@
         <!-- END PAGE LEVEL STYLES -->
         <!-- BEGIN THEME LAYOUT STYLES -->
         <!-- END THEME LAYOUT STYLES -->
-        <link rel="shortcut icon" href="favicon.ico" /> 
+        <link rel="apple-touch-icon-precomposed" href="<?php echo base_url('public/icon/sa-icon-compressed57.png'); ?>" />
+        <link rel="shortcut icon" sizes="16" href="<?php echo base_url('public/icon/sa-icon-compressed16.png'); ?>" />
     </head>
     <!-- END HEAD -->
 

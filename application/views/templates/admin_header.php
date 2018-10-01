@@ -44,7 +44,8 @@
         <link href="<?php echo base_url('public/admin/layouts/layout4/css/custom.min.css'); ?>" rel="stylesheet" type="text/css" />
         <!-- END THEME LAYOUT STYLES -->
         <link href="<?php echo base_url('public/admin/global/plugins/socicon/socicon.css'); ?>" rel="stylesheet" type="text/css" />
-        <link rel="shortcut icon" href="favicon.ico" /> 
+        <link rel="apple-touch-icon-precomposed" href="<?php echo base_url('public/icon/sa-icon-compressed57.png'); ?>" />
+        <link rel="shortcut icon" sizes="16" href="<?php echo base_url('public/icon/sa-icon-compressed16.png'); ?>" /> 
         
     
     <!-- END HEAD -->

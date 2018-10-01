@@ -39,7 +39,7 @@ class Admin_model extends CI_Model {
 	public function member_number() {
 			$num = $this->db->query('SELECT * FROM members');
 
-			echo $num;
+			return $num;
 	}
 
 	public function get_leader($slug = FALSE) {

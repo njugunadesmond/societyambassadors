@@ -57,6 +57,7 @@ $route['admin/blog/create'] 		= 'admin/create_blog';
 $route['admin/users/create']		= 'auth/create_user';
 $route['admin/members/create']		= 'admin/create_member';
 $route['admin/users']				= 'auth/list_user';
+$route['blog/(:any)'] 				= 'blog/view/$1';
 
 $route['default_controller'] 		= 'pages/view';
 $route['(:any)'] 					= 'pages/view/$1';

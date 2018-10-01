@@ -64,7 +64,7 @@ class Admin extends MX_Controller {
 	                }
 
 	                $this->admin_model->set_blog($file_name);
-	                redirect('admin/blogs');
+	                redirect('admin/blog');
 	        }
 	}
 
