@@ -53,7 +53,7 @@
 
 		<div class="fh5co-hero">
 			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(public/images/cover2.jpg);">
+			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(public/images/blog-view.jpeg);">
 				<div class="desc animate-box">
 					<h2>Our <strong>Blog &amp; News</strong></h2>
 					<span><a class="btn btn-primary btn-lg" href="#">Donate Now</a></span>
@@ -81,7 +81,14 @@
 							<div class="blog-text">
 								<div class="prod-title">
 									<h3><?php echo ucwords($blog['title']); ?></h3>
-									<h5 class="posted_by"><?php echo $blog['date']; ?></h5>
+									<h5 class="posted_by">
+										<?php 
+											$date = strtotime($blog['date']);
+											$view = date("jS F, Y ", $date);
+											echo $view; 
+										?>
+											
+									</h5>
 									<p><?php echo $blog['about']; ?></p>	
 								</div>
 							</div> 

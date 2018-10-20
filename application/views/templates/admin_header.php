@@ -21,6 +21,7 @@
         <link href="<?php echo base_url('public/admin/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css'); ?>" rel="stylesheet" type="text/css" />
         <!-- END GLOBAL MANDATORY STYLES -->
         <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <link href="<?php echo base_url('public/admin/global/plugins/fullcalendar/fullcalendar.min.css'); ?>" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url('public/admin/global/plugins/select2/css/select2.min.css'); ?>" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url('public/admin/global/plugins/select2/css/select2-bootstrap.min.css'); ?>" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url('public/admin/global/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css'); ?>" rel="stylesheet" type="text/css" />

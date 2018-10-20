@@ -6,6 +6,30 @@ class Admin_model extends CI_Model {
 		$this->load->database();
 	}
 
+	public function getNumberOfMembers() {
+			$query = $this->db->get('members');
+			$rowcount = $query->num_rows();
+			return $rowcount;
+	}
+
+	public function getNumberOfUsers() {
+			$users = $this->db->get('users');
+			$rowcount = $users->num_rows();
+			return $rowcount;
+	}
+
+	public function getNumberOfEvents() {
+			$events = $this->db->get('events');
+			$rowcount = $events->num_rows();
+			return $rowcount;
+	}
+
+	public function getNumberOfBlogs() {
+			$blogs = $this->db->get('blog');
+			$rowcount = $blogs->num_rows();
+			return $rowcount;
+	}
+
 	public function get_blog($slug = FALSE) {
 			if ($slug === FALSE) {
 				$query = $this->db->get('blog');

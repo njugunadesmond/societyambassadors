@@ -201,7 +201,7 @@
                     <!-- BEGIN PAGE BREADCRUMB -->
                     <ul class="page-breadcrumb breadcrumb">
                         <li>
-                            <a href="<php echo base_url(); ?>">Home</a>
+                            <a href="<?php echo base_url(); ?>admin">Home</a>
                             <i class="fa fa-circle"></i>
                         </li>
                         <li>

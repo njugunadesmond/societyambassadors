@@ -14,7 +14,7 @@ class Admin extends MX_Controller {
 			$head['title'] = 'list blogs';
 
 			if (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin()) {
-				redirect('admin', 'refresh');
+				redirect('login', 'refresh');
 			}
 
 			$data['blogs'] = $this->admin_model->get_blog();
@@ -28,7 +28,7 @@ class Admin extends MX_Controller {
 			$head['title']				= 'create blog';
 
 			if (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin()) {
-				redirect('admin', 'refresh');
+				redirect('login', 'refresh');
 			}
 
 			$config['upload_path']      = './uploads/blog/';
@@ -72,7 +72,7 @@ class Admin extends MX_Controller {
 			$head['title']	= 'list members';
 
 			if (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin()) {
-				redirect('admin', 'refresh');
+				redirect('login', 'refresh');
 			}
 
 			$data['members'] = $this->admin_model->get_member();
@@ -86,7 +86,7 @@ class Admin extends MX_Controller {
 			$head['title']				= 'create member';
 
 			if (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin()) {
-				redirect('admin', 'refresh');
+				redirect('login', 'refresh');
 			}
 
 			$config['upload_path']      = './uploads/members/';
@@ -137,7 +137,7 @@ class Admin extends MX_Controller {
 			$head['title'] = 'list events';
 
 			if (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin()) {
-				redirect('admin', 'refresh');
+				redirect('login', 'refresh');
 			}
 
 			$data['events'] = $this->admin_model->get_event();
@@ -152,7 +152,7 @@ class Admin extends MX_Controller {
 			$head['title'] 				= 'create event';
 
 			if (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin()) {
-				redirect('admin', 'refresh');
+				redirect('login', 'refresh');
 			}
 
 			$config['allowed_types'] 	= 'gif|png|jpeg|jpg';
@@ -198,7 +198,13 @@ class Admin extends MX_Controller {
 			$head['title'] = 'Edit Event';
 
 			if (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin()) {
-				redirect('admin', 'refresh');
+				redirect('login', 'refresh');
 			}
+	}
+
+	public function calender() {
+			$head['title'] = ucwords('my calender');
+
+			
 	}
 }

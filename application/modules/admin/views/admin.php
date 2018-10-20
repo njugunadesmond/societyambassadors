@@ -8,7 +8,7 @@
                 <!-- BEGIN LOGO -->
                 <div class="page-logo">
                     <a href="<?php echo base_url(); ?>admin">
-                        <img src="public/admin/layouts/layout4/img/sa-logo.png" alt="logo" class="logo-default" /> </a>
+                        <img src="public/admin/layouts/layout4/img/design-logo-1.png" alt="logo" class="logo-default" /> </a>
                     <div class="menu-toggler sidebar-toggler">
                         <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
                     </div>
@@ -301,15 +301,19 @@
                     <div class="portlet light bordered">
                         <div class="portlet-body">
                             <div class="tiles">
-                                <!-- <div class="tile double-down bg-blue-hoki">
-                                    <div class="tile-body">
-                                        <i class="fa fa-bell-o"></i>
-                                    </div>
-                                    <div class="tile-object">
-                                        <div class="name"> Notifications </div>
-                                        <div class="number"> 6 </div>
-                                    </div>
-                                </div> -->
+                                <a href="<?php echo base_url(); ?>admin/events">
+                                    <div class="tile double-down bg-blue-hoki">
+                                        <div class="tile-body">
+                                            <i class="fa fa-bell-o"></i>
+                                        </div>
+                                        <div class="tile-object">
+                                            <div class="name"> Events </div>
+                                            <div class="number"> 
+                                                <?php echo $events; ?>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </a>
                                 <!-- <div class="tile bg-red-sunglo">
                                     <div class="tile-body">
                                         <i class="fa fa-calendar"></i>
@@ -335,7 +339,7 @@
                                     </div>
                                 </div> -->
                                 <a href="<?php echo base_url(); ?>admin/members">
-                                    <div class="tile selected bg-yellow-saffron">
+                                    <div class="tile  bg-yellow-saffron">
                                         <div class="corner"> </div>
                                         <div class="tile-body">
                                             <i class="fa fa-user"></i>
@@ -343,22 +347,24 @@
                                         <div class="tile-object">
                                             <div class="name"> Members </div>
                                             <div class="number"> 
-                                                
+                                                <?php echo $members; ?>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                                <!-- <div class="tile double bg-blue-madison">
-                                    <div class="tile-body">
-                                        <img src="../public/assets/pages/media/profile/photo1.jpg" alt="">
-                                        <h4>Announcements</h4>
-                                        <p> Easily style icon color, size, shadow, and anything that's possible with CSS. </p>
-                                    </div>
-                                    <div class="tile-object">
-                                        <div class="name"> Bob Nilson </div>
-                                        <div class="number"> 24 Jan 2013 </div>
-                                    </div>
-                                </div> -->
+                                <a href="<?php echo base_url()?>admin/users">
+                                    <div class="tile double bg-blue-madison">
+                                        <div class="tile-body">
+                                            <i class="fa fa-user-secret"></i>
+                                        </div>
+                                        <div class="tile-object">
+                                            <div class="name"> Admins </div>
+                                            <div class="number"> 
+                                                <?php echo $admins; ?>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </a>
                                 <!-- <div class="tile bg-purple-studio">
                                     <div class="tile-body">
                                         <i class="fa fa-shopping-cart"></i>
@@ -374,16 +380,20 @@
                                     <div class="tile-object">
                                         <div class="name"> Media </div>
                                     </div>
-                                </div>
-                                 <div class="tile bg-green-meadow">
-                                    <div class="tile-body">
-                                        <i class="fa fa-comments"></i>
-                                    </div>
-                                    <div class="tile-object">
-                                        <div class="name"> Feedback </div>
-                                        <div class="number"> 12 </div>
-                                    </div>
                                 </div> -->
+                                <a href="<?php echo base_url()?>admin/blog">
+                                    <div class="tile bg-green-meadow">
+                                        <div class="tile-body">
+                                            <i class="fa fa-comments"></i>
+                                        </div>
+                                        <div class="tile-object">
+                                            <div class="name"> Blogs </div>
+                                            <div class="number"> 
+                                                <?php echo $blogs;?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                                 <!-- <div class="tile double bg-grey-cascade">
                                     <div class="tile-body">
                                         <img src="../public/assets/pages/media/profile/photo2.jpg" alt="" class="pull-right">

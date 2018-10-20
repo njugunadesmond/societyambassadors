@@ -53,7 +53,7 @@
 
 		<div class="fh5co-hero">
 			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(public/images/cover2.jpg);">
+			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(public/images/donation.jpeg);">
 				<div class="desc animate-box">
 					<h2> <strong> News &amp; Events</strong></h2>
 					<span><a class="btn btn-primary btn-lg" href="#">Donate Now</a></span>
@@ -80,7 +80,18 @@
 								<div class="blog-text">
 									<div class="prod-title">
 										<h3><?php echo ucwords($event['venue']); ?></h3>
-										<span class="posted_by"><?php echo $event['type_of_event'], ', '; ?><?php echo $event['start_date']; ?></span>
+										<span class="posted_by"><?php echo $event['type_of_event']; ?></span>
+										<p>
+											<?php 
+											$starting = strtotime($event['start_date']);
+											$start = date("jS F, Y ", $starting);
+											echo $start; ?>
+											-
+											<?php 
+											$ending = strtotime($event['end_date']);
+											$end = date("jS F, Y ", $ending);
+											echo $end; ?>
+										<p>
 										<p>Gate Pass: <?php echo $event['gate_pass']; ?></p>
 									</div>
 								</div> 

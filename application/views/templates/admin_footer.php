@@ -16,6 +16,9 @@
         <script src="<?php echo base_url('public/admin/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js'); ?>" type="text/javascript"></script>
         <!-- END CORE PLUGINS -->
         <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="<?php echo base_url('public/admin/global/plugins/moment.min.js'); ?>" type="text/javascript"></script>
+        <script src="<?php echo base_url('public/admin/global/plugins/fullcalendar/fullcalendar.min.js'); ?>" type="text/javascript"></script>
+        <script src="<?php echo base_url('public/admin/global/plugins/jquery-ui/jquery-ui.min.js'); ?>" type="text/javascript"></script>
         <script src="<?php echo base_url('public/admin/global/plugins/select2/js/select2.full.min.js'); ?>" type="text/javascript"></script>
         <script src="<?php echo base_url('public/admin/global/plugins/bootstrap-markdown/lib/markdown.js'); ?>" type="text/javascript"></script>
         <script src="<?php echo base_url('public/admin/global/plugins/bootstrap-markdown/js/bootstrap-markdown.js'); ?>" type="text/javascript"></script>

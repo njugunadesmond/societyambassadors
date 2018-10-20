@@ -43,11 +43,23 @@ class Auth extends MX_Controller
 			$data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
 
 			//list the users
-			$data['users'] = $this->ion_auth->users()->result();
-			foreach ($data['users'] as $k => $user)
-			{
-				$data['users'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();
-			}
+			//$data['users'] = $this->ion_auth->users()->result();
+			// foreach ($data['users'] as $k => $user)
+			// {
+			// 	$data['users'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();
+			// }
+
+			//get number of members
+			$data['members'] = $this->admin_model->getNumberOfMembers();
+
+			//get number of admins
+			$data['admins'] = $this->admin_model->getNumberOfUsers();
+
+			//get number of events
+			$data['events'] = $this->admin_model->getNumberOfEvents();
+
+			//get number of blogs
+			$data['blogs'] = $this->admin_model->getNumberOfBlogs();
 
 			$this->load->view('templates/admin_header');
 			$this->_render_page('admin/admin', $data);
